@@ -1,9 +1,12 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class andar : MonoBehaviour
 {
     public Rigidbody jogador;
+    public TMP_Text vida;
+    public TMP_Text pontinhos;
 
     void Update()
     {
@@ -23,8 +26,7 @@ public class andar : MonoBehaviour
     {
         if (quem.gameObject.tag == "Mau")
         {
-            Debug.Log("bateu");
-            transform.localScale = transform.localScale + new Vector3(0.1f, 0.1f, 0.1f);
+            vida.text = (int.Parse(vida.text) - 1).ToString();
         }
     }
 
@@ -32,7 +34,7 @@ public class andar : MonoBehaviour
     {
         if (quem.gameObject.tag == "Bom")
         {
-            Debug.Log("passou");
+            pontinhos.text = (int.Parse(pontinhos.text) + 10).ToString();
         }
     }
 }
