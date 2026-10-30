@@ -24,7 +24,7 @@ public class andar : MonoBehaviour
 
     void Update()
     {
-        jogador.AddForce(0, 0, 2);
+        jogador.AddForce(0, 0, 4);
 
         if (Keyboard.current.leftArrowKey.isPressed)
         {
