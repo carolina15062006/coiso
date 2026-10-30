@@ -24,7 +24,7 @@ public class andar : MonoBehaviour
 
     void Update()
     {
-        jogador.AddForce(0, 0, 4);
+        jogador.AddForce(0, 0, 2);
 
         if (Keyboard.current.leftArrowKey.isPressed)
         {
@@ -67,5 +67,10 @@ public class andar : MonoBehaviour
             som.PlayOneShot(sombom);
             Destroy(quem.gameObject);
         }
+        
+        if (quem.gameObject.name == "cubo")
+       {
+         FindAnyObjectByType<controlador>().passou();
+       }
     }
 }

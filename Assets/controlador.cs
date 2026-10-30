@@ -5,6 +5,13 @@ public class controlador : MonoBehaviour
 {
     public void reiniciar()
     {
-        SceneManager.LoadScene("codigo");
+        Debug.Log("REINICIAR chamado!");
+        SceneManager.LoadScene("Nivel 1");
     }
+
+    public void passou()
+{
+    Debug.Log("PASSOU DE NÍVEL");
+}
+     
 }

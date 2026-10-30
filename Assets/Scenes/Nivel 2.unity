@@ -604,6 +604,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 508652753}
+  - component: {fileID: 508652754}
   m_Layer: 0
   m_Name: controlador
   m_TagString: Untagged
@@ -626,6 +627,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &508652754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508652752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b82d4076e7ccc41a38414a1f9f1832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::controlador
 --- !u!1001 &508684431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4413,7 +4426,7 @@ MonoBehaviour:
   jogador: {fileID: 2128136780}
   vida: {fileID: 2029213805}
   pontinhos: {fileID: 1632718450}
-  som: {fileID: 0}
+  som: {fileID: 2128136786}
   sombom: {fileID: 8300000, guid: e69d7be1a9ccf5348a919461828a1f17, type: 3}
   sommau: {fileID: 8300000, guid: 8a4b8f72245ba7045b8192872b225146, type: 3}
 --- !u!82 &2128136786
@@ -4427,9 +4440,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 04f3cd4e770d2af47b8fbfa22a7249e9, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.924
   m_Pitch: 1
   Loop: 0
   Mute: 0
