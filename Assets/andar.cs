@@ -11,6 +11,7 @@ public class andar : MonoBehaviour
     public AudioSource som;
     public AudioClip sombom;
     public AudioClip sommau;
+    private bool jogoAcabou = false;
 
     void Start()
     {
@@ -35,9 +36,9 @@ public class andar : MonoBehaviour
             jogador.AddForce(5, 0, 0);
         }
 
-        if (jogador.position.y < -5)
+         if (!jogoAcabou && jogador.position.y < -5)
         {
-            FindAnyObjectByType<controlador>().reiniciar();
+          FindAnyObjectByType<controlador>().reiniciar();
         }
     }
 
@@ -57,20 +58,24 @@ public class andar : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider quem)
+   private void OnTriggerEnter(Collider quem)
     {
         Debug.Log("Trigger com: " + quem.gameObject.name + " | tag: " + quem.gameObject.tag);
 
+        // Apanhar moedas/pontos
         if (quem.gameObject.tag == "Bom")
         {
             pontinhos.text = (int.Parse(pontinhos.text) + 10).ToString();
             som.PlayOneShot(sombom);
             Destroy(quem.gameObject);
         }
-        
-        if (quem.gameObject.name == "cubo")
-       {
-         FindAnyObjectByType<controlador>().passou();
-       }
+
+        // Chegar ao final do nível
+        if (quem.gameObject.name == "FIM" || quem.gameObject.name == "cubo")
+        {
+            jogoAcabou = true;
+            jogador.linearVelocity = Vector3.zero;
+            FindAnyObjectByType<controlador>().passou();
+        }
     }
 }

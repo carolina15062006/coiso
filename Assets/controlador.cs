@@ -8,7 +8,7 @@ public class controlador : MonoBehaviour
     public void reiniciar()
     {
         Debug.Log("REINICIAR chamado!");
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Nivel 1");
     }
 
     public void passou()
