@@ -781,6 +781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b82d4076e7ccc41a38414a1f9f1832, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::controlador
+  fim: {fileID: 1867677247}
 --- !u!1001 &508684431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2768,7 +2769,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2851282310177759867, guid: 014a56f19002b7445a3d9dd66c53eab3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2851282310177759867, guid: 014a56f19002b7445a3d9dd66c53eab3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2979,7 +2980,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2851282310177759867, guid: 014a56f19002b7445a3d9dd66c53eab3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2851282310177759867, guid: 014a56f19002b7445a3d9dd66c53eab3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4345,7 +4346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1867677248
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4426,7 +4427,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
   m_UseReflectionProbes: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -4876,7 +4877,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4281479730
   m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
