@@ -1,6 +1,6 @@
-
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.EnhancedTouch;
 using TMPro;
 
 public class andar : MonoBehaviour
@@ -12,6 +12,16 @@ public class andar : MonoBehaviour
     public AudioClip sombom;
     public AudioClip sommau;
     private bool jogoAcabou = false;
+
+    void OnEnable()
+    {
+        EnhancedTouchSupport.Enable();
+    }
+
+    void OnDisable()
+    {
+        EnhancedTouchSupport.Disable();
+    }
 
     void Start()
     {
@@ -27,18 +37,37 @@ public class andar : MonoBehaviour
     {
         jogador.AddForce(0, 0, 2);
 
-        if (Keyboard.current.leftArrowKey.isPressed)
+        bool esquerda = false;
+        bool direita = false;
+
+        // Controlo por toque: metade esquerda / metade direita do ecrã
+        foreach (var toque in UnityEngine.InputSystem.EnhancedTouch.Touch.activeTouches)
+        {
+            if (toque.screenPosition.x < Screen.width / 2f)
+                esquerda = true;
+            else
+                direita = true;
+        }
+
+        // Teclado (útil para testar no editor)
+        if (Keyboard.current != null)
+        {
+            if (Keyboard.current.leftArrowKey.isPressed) esquerda = true;
+            if (Keyboard.current.rightArrowKey.isPressed) direita = true;
+        }
+
+        if (esquerda)
         {
             jogador.AddForce(-5, 0, 0);
         }
-        if (Keyboard.current.rightArrowKey.isPressed)
+        if (direita)
         {
             jogador.AddForce(5, 0, 0);
         }
 
-         if (!jogoAcabou && jogador.position.y < -5)
+        if (!jogoAcabou && jogador.position.y < -5)
         {
-          FindAnyObjectByType<controlador>().reiniciar();
+            FindAnyObjectByType<controlador>().reiniciar();
         }
     }
 
@@ -58,7 +87,7 @@ public class andar : MonoBehaviour
         }
     }
 
-   private void OnTriggerEnter(Collider quem)
+    private void OnTriggerEnter(Collider quem)
     {
         Debug.Log("Trigger com: " + quem.gameObject.name + " | tag: " + quem.gameObject.tag);
 
