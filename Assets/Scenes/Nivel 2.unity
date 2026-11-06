@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 12ccb828343c3405fb94289774b51aad, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: de1d750fefeeac642bf9b11a3978ccf5, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -204,7 +204,7 @@ PrefabInstance:
     - target: {fileID: 3277881256010527628, guid: 014a56f19002b7445a3d9dd66c53eab3, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 72f235bcd313f1a41b4dddf16fa41ded, type: 2}
+      objectReference: {fileID: 2100000, guid: dd875135a77bbdb46943dd3a4789dc7e, type: 2}
     - target: {fileID: 6160433607842711057, guid: 014a56f19002b7445a3d9dd66c53eab3, type: 3}
       propertyPath: m_Name
       value: barreira (6)
@@ -659,6 +659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b82d4076e7ccc41a38414a1f9f1832, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::controlador
+  fim: {fileID: 0}
 --- !u!1001 &508684431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1076,7 +1077,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e627dbe335380904e885a5ad31951b57, type: 2}
+  - {fileID: 2100000, guid: 98d7256bd8b469747a8e427a9e0d4c3d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1417,7 +1418,7 @@ PrefabInstance:
     - target: {fileID: 3277881256010527628, guid: 014a56f19002b7445a3d9dd66c53eab3, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 72f235bcd313f1a41b4dddf16fa41ded, type: 2}
+      objectReference: {fileID: 2100000, guid: dd875135a77bbdb46943dd3a4789dc7e, type: 2}
     - target: {fileID: 6160433607842711057, guid: 014a56f19002b7445a3d9dd66c53eab3, type: 3}
       propertyPath: m_Name
       value: barreira (19)
@@ -1728,7 +1729,7 @@ PrefabInstance:
     - target: {fileID: 3277881256010527628, guid: 014a56f19002b7445a3d9dd66c53eab3, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 72f235bcd313f1a41b4dddf16fa41ded, type: 2}
+      objectReference: {fileID: 2100000, guid: dd875135a77bbdb46943dd3a4789dc7e, type: 2}
     - target: {fileID: 6160433607842711057, guid: 014a56f19002b7445a3d9dd66c53eab3, type: 3}
       propertyPath: m_Name
       value: barreira (20)
@@ -1833,7 +1834,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -390.17184, y: 138.23294}
+  m_AnchoredPosition: {x: -493.6056, y: 180.21487}
   m_SizeDelta: {x: 131.5, y: 131.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &976919801
@@ -2056,7 +2057,7 @@ PrefabInstance:
     - target: {fileID: 3277881256010527628, guid: 014a56f19002b7445a3d9dd66c53eab3, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 72f235bcd313f1a41b4dddf16fa41ded, type: 2}
+      objectReference: {fileID: 2100000, guid: dd875135a77bbdb46943dd3a4789dc7e, type: 2}
     - target: {fileID: 6160433607842711057, guid: 014a56f19002b7445a3d9dd66c53eab3, type: 3}
       propertyPath: m_Name
       value: barreira (8)
@@ -2134,7 +2135,7 @@ PrefabInstance:
     - target: {fileID: 3277881256010527628, guid: 014a56f19002b7445a3d9dd66c53eab3, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 72f235bcd313f1a41b4dddf16fa41ded, type: 2}
+      objectReference: {fileID: 2100000, guid: dd875135a77bbdb46943dd3a4789dc7e, type: 2}
     - target: {fileID: 6160433607842711057, guid: 014a56f19002b7445a3d9dd66c53eab3, type: 3}
       propertyPath: m_Name
       value: barreira (15)
@@ -2351,7 +2352,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 22.544983, y: 197.33862}
+  m_AnchoredPosition: {x: 124.89496, y: 243.96362}
   m_SizeDelta: {x: 88, y: 88}
   m_Pivot: {x: -3.7597165, y: 1.1004388}
 --- !u!114 &1286970900
@@ -2546,7 +2547,7 @@ PrefabInstance:
     - target: {fileID: 3277881256010527628, guid: 014a56f19002b7445a3d9dd66c53eab3, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 72f235bcd313f1a41b4dddf16fa41ded, type: 2}
+      objectReference: {fileID: 2100000, guid: dd875135a77bbdb46943dd3a4789dc7e, type: 2}
     - target: {fileID: 6160433607842711057, guid: 014a56f19002b7445a3d9dd66c53eab3, type: 3}
       propertyPath: m_Name
       value: barreira (17)
@@ -2762,7 +2763,7 @@ PrefabInstance:
     - target: {fileID: 3277881256010527628, guid: 014a56f19002b7445a3d9dd66c53eab3, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 72f235bcd313f1a41b4dddf16fa41ded, type: 2}
+      objectReference: {fileID: 2100000, guid: dd875135a77bbdb46943dd3a4789dc7e, type: 2}
     - target: {fileID: 6160433607842711057, guid: 014a56f19002b7445a3d9dd66c53eab3, type: 3}
       propertyPath: m_Name
       value: barreira (18)
@@ -3234,7 +3235,7 @@ PrefabInstance:
     - target: {fileID: 3277881256010527628, guid: 014a56f19002b7445a3d9dd66c53eab3, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 72f235bcd313f1a41b4dddf16fa41ded, type: 2}
+      objectReference: {fileID: 2100000, guid: dd875135a77bbdb46943dd3a4789dc7e, type: 2}
     - target: {fileID: 6160433607842711057, guid: 014a56f19002b7445a3d9dd66c53eab3, type: 3}
       propertyPath: m_Name
       value: barreira (7)
@@ -3356,7 +3357,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 390.9657, y: 141.22064}
+  m_AnchoredPosition: {x: 458.94794, y: 185.72064}
   m_SizeDelta: {x: 137.25, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1632718450
@@ -4517,7 +4518,7 @@ PrefabInstance:
     - target: {fileID: 3277881256010527628, guid: 014a56f19002b7445a3d9dd66c53eab3, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 72f235bcd313f1a41b4dddf16fa41ded, type: 2}
+      objectReference: {fileID: 2100000, guid: dd875135a77bbdb46943dd3a4789dc7e, type: 2}
     - target: {fileID: 6160433607842711057, guid: 014a56f19002b7445a3d9dd66c53eab3, type: 3}
       propertyPath: m_Name
       value: barreira (16)
@@ -4870,8 +4871,8 @@ SceneRoots:
   - {fileID: 2128136784}
   - {fileID: 734216726}
   - {fileID: 603698512}
+  - {fileID: 1579341071}
   - {fileID: 436151303}
   - {fileID: 1923371564}
   - {fileID: 1776805463}
   - {fileID: 508652753}
-  - {fileID: 1579341071}
