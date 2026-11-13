@@ -67,7 +67,7 @@ public class andar : MonoBehaviour
 
         if (!jogoAcabou && jogador.position.y < -5)
         {
-            FindAnyObjectByType<controlador>().reiniciar();
+            ChamarReiniciar();
         }
     }
 
@@ -82,7 +82,7 @@ public class andar : MonoBehaviour
 
             if (int.Parse(vida.text) <= 0)
             {
-                FindAnyObjectByType<controlador>().reiniciar();
+                ChamarReiniciar();
             }
         }
     }
@@ -104,7 +104,26 @@ public class andar : MonoBehaviour
         {
             jogoAcabou = true;
             jogador.linearVelocity = Vector3.zero;
-            FindAnyObjectByType<controlador>().passou();
+            ChamarPassou();
         }
+    }
+
+    // Procura automaticamente o controlador do Nível 1 ou o controlador2 do Nível 2
+    void ChamarReiniciar()
+    {
+        var c1 = FindAnyObjectByType<controlador>();
+        if (c1 != null) c1.reiniciar();
+
+        var c2 = FindAnyObjectByType<controlador2>();
+        if (c2 != null) c2.reiniciar();
+    }
+
+    void ChamarPassou()
+    {
+        var c1 = FindAnyObjectByType<controlador>();
+        if (c1 != null) c1.passou();
+
+        var c2 = FindAnyObjectByType<controlador2>();
+        if (c2 != null) c2.passou();
     }
 }
